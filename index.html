@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Forever Valentine ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="floating-stickers-container"></div>
+    <audio id="bgMusic" loop><source src="audio/teenage-dream.mp3" type="audio/mpeg"></audio>
+
+    <section class="hero">
+        <div class="hero-card">
+            <div class="sticker-fixed" style="top:-30px; left:-30px;">🎀</div>
+            <h1>Hi Princess ❤️</h1>
+            <p>I made something special for you. Tap the screen before you start, Scroll to see it...</p>
+            <div class="sticker-fixed" style="bottom:-20px; right:-20px;">🎀</div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="title">Our Memories</h2>
+        <div class="polaroid-container">
+            <div class="polaroid"><img src="images/pic1.jpg"><p>My Favourite trip</p></div>
+            <div class="polaroid"><img src="images/pic2.jpg"><p>I feel emotionally safe <br> when I'm with you..</p></div>
+            <div class="polaroid"><img src="images/pic3.png"><p>Our favourite hangout <br> place</p></div>
+            <div class="polaroid"><img src="images/pic4.jpg"><p>Such a cutie you are..</p></div>
+            <div class="polaroid"><img src="images/pic5.jpg"><p>Forever my <br> cutie patootie</p></div>
+            <div class="polaroid"><img src="images/pic6.jpg"><p>I miss going out and <br> playing with you</p></div>
+            <div class="polaroid"><img src="images/pic7.jpg"><p>That Smile...</p></div>
+            <div class="polaroid"><img src="images/pic8.jpg"><p>I love you to the moon <br> and back...</p></div>
+        </div>
+    </section>
+
+    <section class="letters-section">
+        <h2 class="title">Handwritten for You</h2>
+        <div class="letter-container">
+            <div class="envelope-wrapper" onclick="this.classList.toggle('open')">
+                <div class="stamp"><img src="./images/stamp.jpg" alt=""></div>
+                <div class="envelope">
+                    <div class="letter-content">
+                        <div class="letter-paper">
+                            <p><strong>To my precious precious,</strong><br><br>I want you to know that I will always choose to love you. When night turns into days the more I love you, and the more I hurt, I still want you. Even if you give me sleepless nights and rivers of tears, I will still give my heart in behalf. I never thought I could feel so comfortable with someone and to have someone feel like home. I dont want to force a relationship but I hope you know that It's only you and I really want us to work. I hope you feel the same way. I love you so much...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tap-hint">Tap to open ✉️</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gift-section">
+        <h2 class="title">Tap to Open Your Gifts</h2>
+        <div class="gift-container">
+            <div class="gift-box" onclick="revealGift(this, 'You got a coupon for your 3D Mehendi because your hands deserve to shine! I will book the appointment for it ✨')">🎁</div>
+            <div class="gift-box" onclick="revealGift(this, 'Yay! You got the passes for the concert! 🎫')">🎁</div>
+            <div class="gift-box" onclick="revealGift(this, 'Get dressed up! We will go to a cafe with great, mild food, or we can go for lunch and eat your favorite ghee rice and dalcha. 🍛')">🎁</div>
+            <div class="gift-box" onclick="revealGift(this, 'Unlimited Desserts! Later on, we’ll go and have some! 🍰')">🎁</div>
+        </div>
+        <div id="gift-collection-area">
+            <h3>Your Gift Bag:</h3>
+            <div id="gift-list"></div>
+        </div>
+    </section>
+
+    <section class="puzzle-section">
+        <h2 class="title">Match My Heart</h2>
+        <div class="puzzle-grid" id="board"></div>
+        <h3 id="puzzleMessage" class="hidden">We are the perfect match! ❤️</h3>
+    </section>
+
+    <section class="proposal">
+        <div id="ask">
+            <h1>Will you be my Valentine?</h1>
+            <div class="btn-container">
+                <button id="yesBtn" onclick="celebrate()">Yes I Do!</button>
+                <button id="noBtn" onmouseover="moveNo()">Maybe later 🙄</button>
+            </div>
+        </div>
+        <div id="final" class="hidden">
+            <h1>Yay! I Love You! ❤️</h1>
+            <img src="images/peach-goma-kissing.gif" width="280">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
