@@ -35,15 +35,15 @@ const board = document.getElementById('board');
 
 // 9 Unique images = 18 total items
 const items = [
-    'images/1.jpg', 'images/1.jpg',
-    'images/2.jpg', 'images/2.jpg',
-    'images/3.jpg', 'images/3.jpg',
-    'images/4.jpg', 'images/4.jpg',
-    'images/5.jpg', 'images/5.jpg',
-    'images/6.jpg', 'images/6.jpg',
-    'images/7.jpg', 'images/7.jpg',
-    'images/8.jpg', 'images/8.jpg',
-    'images/9.jpg', 'images/9.jpg'
+    'images/1.JPG', 'images/1.JPG',
+    'images/2.JPG', 'images/2.JPG',
+    'images/3.JPG', 'images/3.JPG',
+    'images/4.JPG', 'images/4.JPG',
+    'images/5.JPG', 'images/5.JPG',
+    'images/6.JPG', 'images/6.JPG',
+    'images/7.JPG', 'images/7.JPG',
+    'images/8.JPG', 'images/8.JPG',
+    'images/9.JPG', 'images/9.JPG'
 ];
 
 let choices = [];
@@ -108,4 +108,5 @@ function celebrate() {
     document.getElementById('final').classList.remove('hidden');
     audio.src = 'audio/I-wanna-be-yours.mp3';
     audio.play();
+
 }
